@@ -56,7 +56,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="hidden  absolute top-[10%] left-[44.5%]  bg-transparent w-50 h-50 bg-[url('/logo/path.svg')] bg-no-repeat bg-center bg-contain z-50 opacity-100 pointer-events-none lg:flex lg:justify-center lg:items-center lg:flex-col">
+      <div className="hidden  absolute top-[10%] left-[44.5%]  bg-transparent w-50 h-50 bg-[url('/logo/Path.svg')] bg-no-repeat bg-center bg-contain z-50 opacity-100 pointer-events-none lg:flex lg:justify-center lg:items-center lg:flex-col">
         <IoIosPeople className="text-3xl text-white z-51" />
         <p className="text-2xl font-bold">25,000+</p>
         <p className="text-sm">
