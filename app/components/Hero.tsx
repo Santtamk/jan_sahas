@@ -1,55 +1,69 @@
 import Image from "next/image";
 import React from "react";
+import { IoIosPeople } from "react-icons/io";
 
 export default function Hero() {
   return (
-    <div className=" relative flex  justify-center items-center md:flex-col  lg:flex-row gap-8 px-3 bg-[url('/hero/Watermark.jpg')] bg-no-repeat bg-top bg-fill md:h-screen h-[calc(90vh-theme(spacing.20))]">
-      {/* first section */}
-      <div className="lg:w-1/2 flex flex-col gap-8 ">
-        {/* card */}
+    <>
+      <div className="flex  justify-center items-center  flex-col md:flex-col  lg:flex-row gap-8 px-3 bg-[url('/hero/Watermark.jpg')] bg-no-repeat bg-top bg-fill  h-screen ">
+        {/* first section */}
+        <div className="w-full :md-w[90%] lg:w-1/2 flex flex-col gap-8">
+          {/* card */}
 
-        {/* text section */}
-        <div className="text-black">
-          <h1 className="text-5xl font-black font-sauce capitalize pb-2">
-            Jan Sahas
-          </h1>
-          <h2 className="text-2xl font-semibold">Social Empowerment Society</h2>
-          <p className="text-xs opacity-50 pt-6">
-            Jan Sahas Social Empowerment Society is a not-for-profit
-            organisation working in Malwa and Nimar regions in Central India
-            with the focus to increase access to mental health support for
-            marginalised communities.
-          </p>
+          {/* text section */}
+          <div className="text-black md:pt-10">
+            <h1 className="text-5xl lg:text-7xl font-black font-sauce capitalize pb-2">
+              Jan Sahas
+            </h1>
+            <h2
+              className="text-2xl lg:text-4xl font-semibold
+          "
+            >
+              Social Empowerment Society
+            </h2>
+            <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg">
+              Jan Sahas Social Empowerment Society is a not-for-profit
+              organisation working in Malwa and Nimar regions in Central India
+              with the focus to increase access to mental health support for
+              marginalised communities.
+            </p>
+          </div>
+          <div className="flex gap-3">
+            <button className="inline-flex items-center gap-2 cursor-pointer px-8 py-[0.9375rem] rounded-[2rem] bg-[#E4742A] text-white  transition-all duration-300 hover:scale-103 md:text-sm font-medium text-xs">
+              Learn More
+              <span className="hidden">about us</span>
+              {/* <CircleUser size={22} /> */}
+            </button>
+            <button className="inline-flex items-center gap-2 cursor-pointer px-6 py-[0.9375rem] rounded-[2rem] text-[#E4742A]   transition-all duration-300 hover:scale-103 font-medium text-xs md:text-sm ">
+              Support Us
+              {/* <Play size={22} /> */}
+            </button>
+          </div>
+          <div className="text-xs md:text-sm text-black opacity-50">
+            500+ Centers Available all over India
+          </div>
         </div>
-        <div className="flex gap-3">
-          <button className="inline-flex items-center gap-2 cursor-pointer px-8 py-[0.9375rem] rounded-[2rem] bg-[#E4742A] text-white  transition-all duration-300 hover:scale-103  font-medium text-xs">
-            Learn More
-            <span className="hidden">about us</span>
-            {/* <CircleUser size={22} /> */}
-          </button>
-          <button className="inline-flex items-center gap-2 cursor-pointer px-6 py-[0.9375rem] rounded-[2rem] text-[#E4742A]   transition-all duration-300 hover:scale-103 font-medium text-xs hover:bg-[#EEFCFD] hover:text-[#0F313D]">
-            Support Us
-            {/* <Play size={22} /> */}
-          </button>
-        </div>
-        <div className="text-xs text-black opacity-50">
-          500+ Centers Available all over India
+        {/* second section */}
+        <div className="hidden md:flex md:w-[100%] lg:w-1/2 h-full items-center justify-center lg:py-8 ">
+          <div className="w-full h-full">
+            <Image
+              src="/hero/hero.webp"
+              alt="hero image"
+              width={700}
+              height={600}
+              className="rounded-2xl object-cover w-full h-full"
+            />
+          </div>
         </div>
       </div>
-      {/* second section */}
-      <div className="hidden lg:w-1/2 md:flex flex-col gap-[1.25rem] rounded-2xl ">
-        {/* image goes here */}
-        <div className="rounded-t-2xl overflow-hidden">
-          <Image
-            className=""
-            height={450}
-            width={450}
-            src="/hero.webp"
-            alt="hero image"
-          />
-        </div>
-        {/* second heading */}
+      <div className="hidden  absolute top-[10%] left-[44.5%]  bg-transparent w-50 h-50 bg-[url('/logo/path.svg')] bg-no-repeat bg-center bg-contain z-50 opacity-100 pointer-events-none lg:flex lg:justify-center lg:items-center lg:flex-col">
+        <IoIosPeople className="text-3xl text-white z-51" />
+        <p className="text-2xl font-bold">25,000+</p>
+        <p className="text-sm">
+          Members from <br />
+          all over India
+        </p>
       </div>
-    </div>
+    </>
   );
 }
