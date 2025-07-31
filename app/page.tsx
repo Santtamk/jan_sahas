@@ -1,5 +1,10 @@
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import ICarousel from "./components/ICarousel";
+import KeyInterventions from "./components/KeyInterventions";
 import NavBar from "./components/Navbar";
+import WhatWeDo from "./components/WhatWeDo";
+import WhoWeAre from "./components/WhoWeAre";
 
 export default function Home() {
   return (
@@ -8,12 +13,16 @@ export default function Home() {
       <div
         className="
         max-w-[1440px] mx-auto 
-       pb-2   h-full lg:flex lg:justify-center lg:items-center
-       lg:h-[calc(100vh-theme(spacing.20))] 
+       pb-2   lg:flex lg:justify-center lg:items-center lg:flex-col
        "
       >
         <Hero />
+        <WhoWeAre />
+        <ICarousel />
+        <WhatWeDo />
+        <KeyInterventions />
       </div>
+      <Footer />
     </div>
   );
 }
