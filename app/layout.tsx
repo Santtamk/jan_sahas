@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     icon: [
       {
         rel: "icon",
-        url: "/jan_sahas.ico",
+        url: "/favicon.ico",
         type: "image/x-icon",
       },
     ],

@@ -5,7 +5,7 @@ import { IoIosPeople } from "react-icons/io";
 export default function Hero() {
   return (
     <>
-      <div className="flex  justify-center items-center  flex-col md:flex-col  lg:flex-row gap-8 px-3 bg-[url('/hero/Watermark.jpg')] bg-no-repeat bg-top bg-fill  h-screen ">
+      <div className="flex  justify-center items-center  flex-col md:flex-col  lg:flex-row gap-8 px-3 bg-[url('/hero/Watermark.jpg')] bg-no-repeat bg-top bg-fill  h-screen  md:h-dvh">
         {/* first section */}
         <div className="w-full :md-w[90%] lg:w-1/2 flex flex-col gap-8">
           {/* card */}
@@ -47,11 +47,11 @@ export default function Hero() {
         <div className="hidden md:flex md:w-[100%] lg:w-1/2 h-full items-center justify-center lg:py-8 ">
           <div className="w-full h-full">
             <Image
-              src="/hero/hero.webp"
+              src="/hero/hero_image.webp"
               alt="hero image"
               width={700}
               height={600}
-              className="rounded-2xl object-cover w-full h-full"
+              className="rounded-2xl object-cover lg:object-cover w-full h-full"
             />
           </div>
         </div>

@@ -30,7 +30,7 @@ const FiveGrids = [
 
 const KeyInterventions = () => {
   return (
-    <div className="py-10 ">
+    <div className="py-10 px-3">
       <div className="py-5">
         <div className="text-black text-2xl lg:text-4xl font-semibold text-center">
           Key Interventions
