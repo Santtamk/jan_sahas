@@ -30,7 +30,7 @@ export default function ImageSlider() {
   }, [isHovered]);
 
   return (
-    <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl mx-auto mt-4">
+    <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl mx-auto mt-4 px-3">
       <div
         className="relative w-full h-full"
         onMouseOver={() => setIsHovered(true)}
