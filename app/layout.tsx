@@ -5,9 +5,12 @@ import "@fontsource/open-sauce-one/500.css"; // regular
 import "@fontsource/open-sauce-one/700.css"; // bold (optional)
 import "@fontsource/open-sauce-one/800.css"; // bold (optional)
 import "@fontsource/open-sauce-one/900.css"; // bold (optional)
+import "@fontsource/open-sauce-one"; // bold (optional)
 
 // or just import the base:
 import "@fontsource/open-sauce-one";
+import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Jan Sahas | Social Empowerment Society",
@@ -30,7 +33,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sauce  antialiased`}>{children}</body>
+      <body
+        suppressHydrationWarning
+        className="font-sauce  antialiased min-h-screen bg-custom-gradient text-[#F6F6F6] bg-white  tracking-[-0.7px] overflow-x-hidden    max-w-[1440px] mx-auto "
+      >
+        <NavBar />
+        <main
+          className=" px-4 sm:px-6 lg:px-10
+     
+       pb-2  
+       "
+        >
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
