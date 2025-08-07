@@ -78,7 +78,7 @@ function NavBar() {
 
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <div className="absolute top-[113px] left-0 w-full bg-black z-10 px-5 pb-4 lg:hidden transition-all">
+        <div className="absolute top-[113px] left-0 w-full bg-black z-11 px-5 pb-4 lg:hidden transition-all backdrop-blur-md">
           <ul className="flex flex-col gap-5 py-3">
             {navLinks.map((navLink, i) => (
               <li key={i}>
