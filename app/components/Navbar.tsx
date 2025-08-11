@@ -13,13 +13,13 @@ const navLinks = [
     title: "Our Work",
     link: "/ourWork",
   },
-  {
-    title: "Impact & Achievement",
-    link: "/about-us",
-  },
+  // {
+  //   title: "Impact & Achievement",
+  //   link: "/about-us",
+  // },
   {
     title: "Get Involved",
-    link: "/feed",
+    link: "/getInvolved",
   },
   {
     title: "Media",
@@ -35,16 +35,18 @@ function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="pt-4 flex justify-between items-center xl:py-2">
+    <header className="pt-4 flex justify-between items-center xl:py-2 overflow-x-hidden">
       {/* Logo */}
       <div className="cursor-pointer flex justify-center items-center">
-        <Image
-          src="/logo/js_logo.webp"
-          width={85}
-          height={40}
-          alt="nav_logo"
-          className="transition-all duration-300 hover:scale-105 object-contain"
-        />
+        <Link href="/">
+          <Image
+            src="/logo/js_logo.webp"
+            width={85}
+            height={40}
+            alt="nav_logo"
+            className="transition-all duration-300 hover:scale-105 object-contain"
+          />
+        </Link>
       </div>
 
       {/* Desktop Nav */}

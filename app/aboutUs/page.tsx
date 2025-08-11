@@ -10,7 +10,7 @@ import BoardM from "./components/BoardM";
 
 const pages = () => {
   return (
-    <div className="px-3 pt-5 ">
+    <div className=" pt-5  px-7  lg:px-10">
       <div className=" py-10">
         <FirstImage />
       </div>
