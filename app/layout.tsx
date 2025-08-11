@@ -35,17 +35,10 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning
-        className="font-sauce  antialiased min-h-screen bg-custom-gradient text-[#F6F6F6] bg-white  tracking-[-0.7px] overflow-x-hidden    max-w-[1440px] mx-auto "
+        className="font-sauce  antialiased min-h-screen bg-custom-gradient text-[#F6F6F6] bg-white  tracking-[-0.7px]  max-w-[1440px] mx-auto"
       >
         <NavBar />
-        <main
-          className=" px-4 sm:px-6 lg:px-10
-     
-       pb-2  
-       "
-        >
-          {children}
-        </main>
+        <main className=" pb-2">{children}</main>
         <Footer />
       </body>
     </html>
