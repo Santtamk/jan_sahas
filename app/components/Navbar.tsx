@@ -23,11 +23,11 @@ const navLinks = [
   },
   {
     title: "Media",
-    link: "/feed",
+    link: "/media",
   },
   {
     title: "Contact Us",
-    link: "/feed",
+    link: "/contactUs",
   },
 ];
 
@@ -38,13 +38,15 @@ function NavBar() {
     <header className="pt-4 flex justify-between items-center xl:py-2">
       {/* Logo */}
       <div className="cursor-pointer flex justify-center items-center">
-        <Image
-          src="/logo/js_logo.webp"
-          width={85}
-          height={40}
-          alt="nav_logo"
-          className="transition-all duration-300 hover:scale-105 object-contain"
-        />
+        <Link href="/">
+          <Image
+            src="/logo/js_logo.webp"
+            width={85}
+            height={40}
+            alt="nav_logo"
+            className="transition-all duration-300 hover:scale-105 object-contain"
+          />
+        </Link>
       </div>
 
       {/* Desktop Nav */}

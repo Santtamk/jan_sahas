@@ -5,7 +5,7 @@ import { IoIosPeople } from "react-icons/io";
 export default function Hero() {
   return (
     <>
-      <div className="flex  justify-center items-center  flex-col md:flex-col  lg:flex-row gap-8 px-3 bg-[url('/hero/Watermark.jpg')] bg-no-repeat bg-top bg-fill  h-screen  md:h-dvh">
+      <div className="flex  justify-center items-center  flex-col md:flex-col  lg:flex-row gap-8 px-3  bg-no-repeat bg-top bg-fill  h-screen  md:h-dvh">
         {/* first section */}
         <div className="w-full :md-w[90%] lg:w-1/2 flex flex-col gap-8">
           {/* card */}
@@ -55,14 +55,6 @@ export default function Hero() {
             />
           </div>
         </div>
-      </div>
-      <div className="hidden  absolute top-[10%] left-[44.5%]  bg-transparent w-50 h-50 bg-[url('/logo/Path.svg')] bg-no-repeat bg-center bg-contain z-50 opacity-100 pointer-events-none lg:flex lg:justify-center lg:items-center lg:flex-col">
-        <IoIosPeople className="text-3xl text-white z-51" />
-        <p className="text-2xl font-bold">25,000+</p>
-        <p className="text-sm">
-          Members from <br />
-          all over India
-        </p>
       </div>
     </>
   );
