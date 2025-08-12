@@ -23,11 +23,11 @@ const navLinks = [
   },
   {
     title: "Media",
-    link: "/feed",
+    link: "/media",
   },
   {
     title: "Contact Us",
-    link: "/feed",
+    link: "/contactUs",
   },
 ];
 
