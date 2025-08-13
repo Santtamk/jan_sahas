@@ -1,6 +1,8 @@
 import ImageSlider from "@/app/components/ICarousel";
 import React from "react";
 
+const images = ["/slider/slider1.webp", "/slider/slider2.webp"];
+
 const OurStory = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-4">
@@ -25,10 +27,9 @@ const OurStory = () => {
         </p>
       </div>
       <div className="lg:w-1/2 ">
-      <div>
-
-        <ImageSlider />
-      </div>
+        <div>
+          <ImageSlider images={images} />
+        </div>
       </div>
     </div>
   );
