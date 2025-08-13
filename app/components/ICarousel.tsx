@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const images = ["/slider/slider1.webp", "/slider/slider2.webp"];
+interface ImageSliderProps {
+  images: string[];
+}
 
-export default function ImageSlider() {
+export default function ImageSlider({ images }: ImageSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState<"left" | "right">("right");
   const [isHovered, setIsHovered] = useState(false);

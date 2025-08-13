@@ -38,8 +38,8 @@ export default function RootLayout({
         className="font-sauce  antialiased min-h-screen bg-custom-gradient text-[#F6F6F6] bg-white  tracking-[-0.7px]  max-w-[1440px] mx-auto"
       >
         <NavBar />
-        <main className=" pb-2">{children}</main>
-        <Footer />
+        <main className="pb-2">{children}</main>
+        <Footer />s
       </body>
     </html>
   );

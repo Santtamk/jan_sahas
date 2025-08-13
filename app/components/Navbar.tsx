@@ -13,10 +13,6 @@ const navLinks = [
     title: "Our Work",
     link: "/ourWork",
   },
-  // {
-  //   title: "Impact & Achievement",
-  //   link: "/about-us",
-  // },
   {
     title: "Get Involved",
     link: "/getInvolved",
