@@ -10,32 +10,34 @@ import BoardM from "./components/BoardM";
 
 const pages = () => {
   return (
-    <div className="  px-7  lg:px-10">
+    <>
       <div className="">
         <FirstImage />
       </div>
-      <div className="py-4 lg:py-12 ">
-        <OurStory />
+      <div className="  px-7  lg:px-10 max-w-[1440px] mx-auto">
+        <div className="py-4 lg:py-12 ">
+          <OurStory />
+        </div>
+        <div className="py-4">
+          <OurMisson />
+        </div>
+        <div className="py-4">
+          <KeyObjectives />
+        </div>
+        <div className="py-4">
+          <Approach />
+        </div>
+        <div className="py-4">
+          <Impact />
+        </div>
+        <div className="">
+          <WhereWW />
+        </div>
+        <div className="">
+          <BoardM />
+        </div>
       </div>
-      <div className="py-4">
-        <OurMisson />
-      </div>
-      <div className="py-4">
-        <KeyObjectives />
-      </div>
-      <div className="py-4">
-        <Approach />
-      </div>
-      <div className="py-4">
-        <Impact />
-      </div>
-      <div className="">
-        <WhereWW />
-      </div>
-      <div className="">
-        <BoardM />
-      </div>
-    </div>
+    </>
   );
 };
 

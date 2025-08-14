@@ -9,10 +9,10 @@ const images = ["/slider/slider1.webp", "/slider/slider2.webp"];
 export default function Home() {
   return (
     <>
-      <div>
+      <div className="">
         <Hero />
       </div>
-      <div className=" px-4 sm:px-6 lg:px-10">
+      <div className=" px-4 sm:px-6 lg:px-10 max-w-[1440px] mx-auto">
         <WhoWeAre />
         <ICarousel images={images} />
         <WhatWeDo />

@@ -5,23 +5,24 @@ export function ContactSection14() {
   return (
     <>
       <section
-        className="
+        className="relative
       bg-[url('/aboutUs/about_us.webp')]
       bg-no-repeat
       bg-cover
       bg-center lg:bg-cover
       flex items-center justify-center
-      px-4 text-center
-      rounded-3xl
+       text-center
+      
       h-[300px] sm:h-[400px] md:h-[500px] 
     text-gray-600 body-font 
       "
       >
-        <div className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white">
+        <div className="absolute inset-0 bg-black/80 z-0" />
+        <div className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white relative">
           Contact Us
         </div>
       </section>
-      <section>
+      <section className="max-w-[1440px] mx-auto">
         <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg text-black text-center">
           We&apos;d love to hear from you! Whether you have questions about our
           work, want to explore collaboration opportunities, or simply wish to
@@ -42,7 +43,6 @@ export function ContactSection14() {
               scrolling="no"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.1850892288903!2d75.92726067530485!3d22.721360879385966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2eed3ab976f%3A0x88830baef1e6265d!2sJan%20Sahas%20Social%20Empowerment%20Society!5e0!3m2!1sen!2sin!4v1754906429417!5m2!1sen!2sin"
             ></iframe>
-            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.1850892288903!2d75.92726067530485!3d22.721360879385966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2eed3ab976f%3A0x88830baef1e6265d!2sJan%20Sahas%20Social%20Empowerment%20Society!5e0!3m2!1sen!2sin!4v1754906429417!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
             <div className="bg-white  flex flex-wrap py-6 rounded shadow-md z-10">
               <div className="lg:w-1/2 px-6">
                 <h2 className="title-font font-semibold text-gray-900 text-xs">
@@ -58,7 +58,7 @@ export function ContactSection14() {
                 <h2 className="title-font font-semibold text-gray-900 text-xs">
                   EMAIL
                 </h2>
-                <a className="text-red-500 leading-relaxed">
+                <a className="text-primary leading-relaxed">
                    jses.indore@gmail.com
                 </a>
                 <h2 className="title-font font-semibold text-gray-900 text-xs mt-4">
@@ -79,7 +79,7 @@ export function ContactSection14() {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className=" mb-4">
@@ -88,7 +88,7 @@ export function ContactSection14() {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className=" mb-4">
@@ -96,10 +96,10 @@ export function ContactSection14() {
               <textarea
                 id="message"
                 name="message"
-                className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
-            <button className="text-white bg-[#E4742A] border-0 py-2 px-6 focus:outline-none hover:bg-red-600  text-lg rounded-[2rem]">
+            <button className="text-white bg-[#E4742A] border-0 py-2 px-6 focus:outline-none hover:bg-primary  text-lg rounded-[2rem] cursor-pointer">
               Submit
             </button>
           </div>

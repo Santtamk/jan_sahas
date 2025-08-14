@@ -14,13 +14,15 @@ const page = () => {
   return (
     <div>
       <OurWork />
-      <div className=" px-4 sm:px-6 lg:px-10">
+      <div className=" px-4 sm:px-6 lg:px-10 max-w-[1440px] mx-auto">
         <Community />
         {/* <SuccessStory /> */}
         <Over />
       </div>
-      <OurProgram />
-      <div className=" px-4 sm:px-6 lg:px-10">
+      <div className="max-w-[1440px] mx-auto">
+        <OurProgram />
+      </div>
+      <div className=" px-4 sm:px-6 lg:px-10 max-w-[1440px] mx-auto">
         <Collab />
         <Extra
           header={"Direct Referrals"}

@@ -42,7 +42,7 @@ const page = () => {
   return (
     <div>
       <Top />
-      <div className="py-10">
+      <div className="py-10 max-w-[1440px] mx-auto">
         <div className="text-2xl lg:text-4xl font-semibold text-black text-center">
           Annual Reports
         </div>
@@ -53,7 +53,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="py-10 bg-gray-300">
+      <div className="py-10 bg-gray-300 max-w-[1440px] mx-auto">
         <div className="text-2xl lg:text-4xl font-semibold text-black text-center">
           Events
         </div>
@@ -63,7 +63,7 @@ const page = () => {
           </div>
         </div>
       </div>
-
+    
       <Gallery />
     </div>
   );
