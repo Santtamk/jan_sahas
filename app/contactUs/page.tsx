@@ -3,7 +3,7 @@ import ContactSection14 from "./component";
 
 const page = () => {
   return (
-    <div>
+    <div className="">
       <ContactSection14 />
     </div>
   );

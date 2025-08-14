@@ -68,7 +68,7 @@ const WorkWithUs = () => {
           <div className=" flex justify-center items-center flex-col text-center">
             <div className="text-xl font-bold">Vacancies:</div>
 
-            <p className="text-xs md:text-sm opacity-60 lg:text-lg hover:opacity-80 ">
+            <p className="text-xs md:text-sm opacity-60 lg:text-lg hover:opacity-80 cursor-pointer hover:scale-101">
               [Link to Application Form or Slides of Vacancies]
             </p>
           </div>

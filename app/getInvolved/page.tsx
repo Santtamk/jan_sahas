@@ -5,11 +5,13 @@ import Donate from "./components/Donate";
 
 const page = () => {
   return (
-    <div>
+    <>
       <StartingImage />
-      <WorkWithUs />
-      <Donate />
-    </div>
+      <div className="max-w-[1440px] mx-auto">
+        <WorkWithUs />
+        <Donate />
+      </div>
+    </>
   );
 };
 

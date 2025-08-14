@@ -3,14 +3,14 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-screen flex items-center justify-center">
+    <section className="relative h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center">
       {/* Background Image */}
       <Image
         src="/hero/hero_image.webp"
         alt="Jan Sahas - Social Empowerment"
         fill
         priority
-        className="object-cover object-center"
+        className="object-cover object-top"
       />
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/80" />

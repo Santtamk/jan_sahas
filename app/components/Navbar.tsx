@@ -5,94 +5,98 @@ import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const navLinks = [
-  {
-    title: "About Us",
-    link: "/aboutUs",
-  },
-  {
-    title: "Our Work",
-    link: "/ourWork",
-  },
-  {
-    title: "Get Involved",
-    link: "/getInvolved",
-  },
-  {
-    title: "Media",
-    link: "/media",
-  },
-  {
-    title: "Contact Us",
-    link: "/contactUs",
-  },
+  { title: "About Us", link: "/aboutUs" },
+  { title: "Our Work", link: "/ourWork" },
+  { title: "Get Involved", link: "/getInvolved" },
+  { title: "Media", link: "/media" },
+  { title: "Contact Us", link: "/contactUs" },
 ];
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="pt-4 flex justify-between items-center xl:py-2 overflow-x-hidden">
-      {/* Logo */}
-      <div className="cursor-pointer flex justify-center items-center">
-        <Link href="/">
-          <Image
-            src="/logo/js_logo.webp"
-            width={85}
-            height={40}
-            alt="nav_logo"
-            className="transition-all duration-300 hover:scale-105 object-contain"
-          />
-        </Link>
-      </div>
-
-      {/* Desktop Nav */}
-      <nav className="hidden lg:flex">
-        <ul className="flex">
-          {navLinks.map((navLink, i) => (
-            <li key={i}>
-              <Link
-                href={navLink.link}
-                className="group relative inline-block text-lg font-medium"
-              >
-                <span className="relative text-black z-10 inline-block hover:bg-black hover:text-white px-7 py-[0.9375rem] rounded-[2rem]">
-                  {navLink.title}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
-      {/* below this section's ui is still being developed  */}
-      {/* Hamburger for mobile */}
-      <div
-        className={`lg:hidden flex flex-col gap-1 cursor-pointer transition-transform duration-300 text-black p-3 ${
-          isMenuOpen ? "rotate-90 text-white bg-black rounded-full p-3" : ""
+    <div className="max-w-[1440px] mx-auto">
+      {/* Fixed Header */}
+      <header
+        className={` w-full z-50 flex justify-between items-center px-3 py-3  xl:py-1 ${
+          isMenuOpen ? "bg-primary text-white fixed top-0 left-0" : "bg-white"
         }`}
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        <GiHamburgerMenu size={27} />
-      </div>
+        {/* Logo */}
+        <div className="cursor-pointer flex justify-center items-center">
+          <Link href="/">
+            <Image
+              src="/logo/fevicon_js 2.svg"
+              width={60}
+              height={35}
+              alt="nav_logo"
+              className="transition-all duration-300 hover:scale-105 object-contain"
+            />
+          </Link>
+        </div>
 
-      {/* Mobile Dropdown Menu */}
-      {isMenuOpen && (
-        <div className="absolute top-[113px] left-0 w-full bg-black z-11 px-5 pb-4 lg:hidden transition-all backdrop-blur-md">
-          <ul className="flex flex-col gap-5 py-3">
+        {/* Desktop Nav */}
+        <nav className="hidden lg:flex">
+          <ul className="flex">
             {navLinks.map((navLink, i) => (
               <li key={i}>
                 <Link
                   href={navLink.link}
-                  className="block text-[10px] font-medium py-2"
-                  onClick={() => setIsMenuOpen(false)}
+                  className="group relative inline-block text-lg font-medium"
                 >
-                  {navLink.title}
+                  <span className="relative text-black z-10 inline-block hover:bg-primary hover:text-white px-7 py-[0.9375rem] rounded-[2rem]">
+                    {navLink.title}
+                  </span>
                 </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Hamburger for Mobile */}
+        <div className="lg:hidden z-50 pr-2">
+          <div
+            className={`flex flex-col gap-1 cursor-pointer transition-transform duration-300 p-3 ${
+              isMenuOpen
+                ? "rotate-90 text-white bg-black rounded-full"
+                : "text-black"
+            }`}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <GiHamburgerMenu size={27} />
+          </div>
+        </div>
+      </header>
+
+      {/* Mobile Dropdown Menu */}
+      {isMenuOpen && (
+        <div
+          className="fixed top-[74px] left-0 w-full h-[calc(100vh-74px)] 
+               bg-primary/95 z-40 px-5 pb-4 lg:hidden overflow-y-auto 
+               backdrop-blur-md transition-transform duration-300 ease-in-out animate-slideDown"
+        >
+          <ul className="flex flex-col justify-center items-center gap-5 py-5">
+            {navLinks.map((navLink, i) => (
+              <li key={i} className="w-full text-center">
+                <Link
+                  href={navLink.link}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block text-sm font-medium py-2 transition-transform duration-200 hover:scale-110 hover:text-yellow-300"
+                >
+                  <div className="text-xl sm:text-2xl lg:text-4xl font-semibold mt-2">
+                    {navLink.title}
+                  </div>
+                </Link>
+                {i < navLinks.length - 1 && (
+                  <div className="w-1/2 mx-auto border-b border-white/20 mt-2"></div>
+                )}
               </li>
             ))}
           </ul>
         </div>
       )}
-    </header>
+    </div>
   );
 }
 

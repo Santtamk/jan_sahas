@@ -24,7 +24,7 @@ const Sections = [
 
 const Footer = () => {
   return (
-    <div className="px-3 py-10 flex flex-col md:flex-row md:justify-end md:items-stretch">
+    <div className="px-3 pt-10 flex flex-col md:flex-row md:justify-end md:items-stretch max-w-[1440px] mx-auto">
       <div className="flex flex-col gap-3 md:w-1/2">
         <div>
           <Image

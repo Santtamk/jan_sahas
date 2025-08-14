@@ -47,7 +47,7 @@ const Donate = () => {
               payment gateway.
             </p>
 
-            <p className="text-xs md:text-sm opacity-60 lg:text-lg hover:opacity-80 ">
+            <p className="text-xs md:text-sm opacity-60 lg:text-lg hover:opacity-80 hover:scale-101 cursor-pointer">
               [Link to Application Form or Slides of Vacancies]
             </p>
           </div>
