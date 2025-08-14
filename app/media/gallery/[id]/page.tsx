@@ -3,8 +3,13 @@
 import Image from "next/image";
 import { galleries } from "../data/galleries";
 
-export default function GalleryPage({ params }: { params: { id: string } }) {
-  const gallery = galleries.find((g) => g.id === params.id);
+export default async function GalleryPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const gallery = galleries.find((g) => g.id === id);
 
   if (!gallery) return <div className="p-4">Gallery not found</div>;
 
