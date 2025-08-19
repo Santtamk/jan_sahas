@@ -9,7 +9,7 @@ const StakeHolder = () => {
         {/* card */}
 
         {/* text section */}
-        <div className="text-black md:pt-10 flex justify-center items-center flex-col ">
+        <div className="text-background/80 md:pt-10 flex justify-center items-center flex-col ">
           <p className="text-2xl lg:text-4xl font-semibold text-center ">
             Stakeholder Engagement
           </p>

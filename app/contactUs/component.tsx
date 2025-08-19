@@ -14,26 +14,26 @@ export function ContactSection14() {
        text-center
       
       h-[300px] sm:h-[400px] md:h-[500px] 
-    text-gray-600 body-font 
+    text-background/80 body-font 
       "
       >
-        <div className="absolute inset-0 bg-black/80 z-0" />
+        <div className="absolute inset-0 bg-background/80 z-0" />
         <div className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white relative">
           Contact Us
         </div>
       </section>
       <section className="max-w-[1440px] mx-auto">
-        <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg text-black text-center">
+        <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg text-background/80 text-center px-4">
           We&apos;d love to hear from you! Whether you have questions about our
           work, want to explore collaboration opportunities, or simply wish to
           learn more about JSSES, please don&apos;t hesitate to reach out. Your
           inquiries and engagement are important to us.
         </p>
 
-        <div className="text-2xl lg:text-4xl font-semibold text-center text-black py-10">
+        <div className="text-2xl lg:text-4xl font-semibold text-center text-background/80 py-10">
           Visit Our Office
         </div>
-        <div className="container px-4 mx-auto flex sm:flex-nowrap flex-wrap ">
+        <div className="container  mx-auto flex sm:flex-nowrap flex-wrap ">
           <div className="lg:w-2/3 md:w-1/2  rounded-lg overflow-hidden sm:mr-10 flex items-center justify-start md:relative flex-col md:justify-end md:pb-3">
             <iframe
               width="100%"
@@ -48,7 +48,7 @@ export function ContactSection14() {
                 <h2 className="title-font font-semibold text-gray-900 text-xs">
                   ADDRESS
                 </h2>
-                <p className="mt-1 text-black">
+                <p className="mt-1 text-background/80">
                   408, G-1 Ahinsha Height,
                   <br />
                   Manavta Nagar, Indore 452016, Madhya Pradesh, India
@@ -64,42 +64,50 @@ export function ContactSection14() {
                 <h2 className="title-font font-semibold text-gray-900 text-xs mt-4">
                   PHONE
                 </h2>
-                <p className="leading-relaxed text-black">+91-731-284-5936</p>
+                <p className="leading-relaxed text-background/80">
+                  +91-731-284-5936
+                </p>
               </div>
             </div>
           </div>
-          <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-            <div className="text-2xl lg:text-4xl font-semibold text-black text-center">
+          <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 px-4">
+            <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center">
               GET IN TOUCH
             </div>
 
             <div className=" mb-4">
-              <label className="leading-7 text-sm text-gray-600">Name</label>
+              <label className="leading-7 text-sm text-background/80">
+                Name
+              </label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className=" mb-4">
-              <label className="leading-7 text-sm text-gray-600">Email</label>
+              <label className="leading-7 text-sm text-background/80">
+                Email
+              </label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className=" mb-4">
-              <label className="leading-7 text-sm text-gray-600">Message</label>
+              <label className="leading-7 text-sm text-background/80">
+                Message
+              </label>
               <textarea
                 id="message"
                 name="message"
-                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
-            <button className="text-white bg-[#E4742A] border-0 py-2 px-6 focus:outline-none hover:bg-primary  text-lg rounded-[2rem] cursor-pointer">
+            <button className="text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-primary  text-lg rounded-[2rem] cursor-pointer">
               Submit
             </button>
           </div>

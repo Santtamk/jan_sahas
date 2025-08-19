@@ -35,12 +35,12 @@ const FiveGrids = [
 
 const Approach = () => {
   return (
-    <div className="py-10">
-      <div className="py-7 ">
-        <div className="text-black  text-2xl lg:text-4xl font-semibold text-center">
+    <div className="">
+      <div className="py-5">
+        <div className="text-background/80  text-2xl lg:text-4xl font-semibold text-center">
           Our Approach
         </div>
-        <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg text-black  text-center ">
+        <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg text-background/80  text-center ">
           Our approach is rooted in creating sustainable change and empowering
           marginalized communities by focusing on their strength and fostering
           self-reliance. We believe that true transformation comes from within
@@ -52,7 +52,7 @@ const Approach = () => {
           return (
             <div
               key={i}
-              className={`border-2 border-[#E9E9E9] rounded-3xl p-5 text-black hover:bg-black hover:text-white 
+              className={`border-2 border-[#E9E9E9] rounded-3xl p-5 text-background/80 hover:bg-[#2D2A6D] hover:text-white 
                md:col-span-2 shadow-md lg:bg-white`}
             >
               <div className="text-xl font-bold">{grid.header}</div>

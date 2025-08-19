@@ -1,73 +1,3 @@
-// import Image from "next/image";
-// import React from "react";
-
-// const Stories = [
-//   {
-//     img: "/aboutUs/placeholder.png",
-//     about:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
-//   },
-//   {
-//     img: "/aboutUs/placeholder.png",
-//     about:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
-//   },
-//   {
-//     img: "/aboutUs/placeholder.png",
-//     about:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
-//   },
-//   {
-//     img: "/aboutUs/placeholder.png",
-//     about:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
-//   },
-//   {
-//     img: "/aboutUs/placeholder.png",
-//     about:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
-//   },
-// ];
-
-// const SuccessStory = () => {
-//   return (
-//     <div className="text-black ">
-//       <div className="text-xl md:text-2xl lg:text-3xl font-semibold text-center">
-//         Success Story
-//       </div>
-//       <div className="flex flex-col md:flex-row gap-3">
-//         {Stories.map((story, i) => {
-//           return (
-//             <div
-//               key={i}
-//               className="text-black rounded-3xl  b
-//                     border-2 border-[#E9E9E9]
-//                       shadow-sm "
-//             >
-//               <div>
-//                 <Image
-//                   width={300}
-//                   height={300}
-//                   className="w-full h-[400px] rounded-t-3xl"
-//                   alt="story image"
-//                   src={story.img}
-//                 />
-//               </div>
-//               <div className="flex justify-center flex-col items-start p-5">
-//                 <div className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg text-black ">
-//                   {story.about}
-//                 </div>
-//               </div>
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default SuccessStory;
-
 "use client";
 import Image from "next/image";
 import React from "react";
@@ -102,7 +32,7 @@ const Stories = [
 
 const SuccessStory = () => {
   return (
-    <div className="text-black w-full px-4">
+    <div className="text-background/80 w-full px-4">
       <div className="text-xl md:text-2xl lg:text-3xl font-semibold text-center mb-6">
         Success Story
       </div>

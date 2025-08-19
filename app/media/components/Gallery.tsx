@@ -22,8 +22,8 @@ const images = [
 
 const Gallery = () => {
   return (
-    <div className="py-10 bg-white max-w-[1440px] mx-auto">
-      <div className="text-2xl lg:text-4xl font-semibold text-black text-center py-5">
+    <div className="py-10 bg-white max-w-[1440px] mx-auto" id="photoGallery">
+      <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center py-5">
         Photo Gallery
       </div>
 

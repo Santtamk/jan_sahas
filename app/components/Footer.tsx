@@ -24,57 +24,63 @@ const Sections = [
 
 const Footer = () => {
   return (
-    <div className="px-3 pt-10 flex flex-col md:flex-row md:justify-end md:items-stretch max-w-[1440px] mx-auto">
-      <div className="flex flex-col gap-3 md:w-1/2">
-        <div>
+    <div className="bg-background/10">
+      <div className="px-3 py-6 flex flex-col   max-w-[1440px] mx-auto ">
+        <div className="flex  justify-start items-center gap-3">
           <Image
-            src="/logo/js_logo.webp"
+            src="/logo/fevicon_js 2.svg"
             width={60}
             height={40}
             alt="nav_logo"
             className=" "
           />
-        </div>
-        <div className=" flex flex-col gap-4">
-          <div className="text-black opacity-70 flex gap-3 text-xs md:text-sm items-center justify-start">
-            <div>
-              <IoLocation size={20} />
-            </div>
-            <div className=" ">
-              408, G-1 Ahinsha Height, Manavta Nagar, Indore 452016
-            </div>
-          </div>
-          <div className="text-black opacity-70 flex gap-3 text-xs  items-center justify-start">
-            <IoMdCall size={20} />
-            <span className=" ">+91 7312845936</span>
-          </div>
-          <div className="text-black opacity-70 flex gap-3 text-xs  items-center justify-start">
-            <IoMdMail size={20} />
-            <span className=" ">jses.indore@gmail.com</span>
-          </div>
-          <div className="text-black opacity-60 flex gap-3 text-xs  items-center justify-start">
-            <span className=" ">© 2025 Jan Sahas. All Rights Reserved</span>
+          <div className="text-lg sm:text-2xl lg:text-4xl font-semibold mt-2 text-background/80">
+            Jan Sahas
           </div>
         </div>
-      </div>
-      <div className="pt-5 md:w-1/2 flex flex-col md:flex-row  gap-10 md:items-end md:justify-end">
-        {Sections.map((section, index) => (
-          <div key={index}>
-            <div className="text-[#E4742A] text-xs opacity-70 pb-5 cursor-pointer md:text-sm">
-              {section.title}
+        <div className="flex justify-between flex-col lg:flex-row items-between gap-3 ">
+          <div className=" flex md:w-1/2 flex-col gap-4 pt-4 px-5">
+            <div className="text-background/80 opacity-70 flex gap-3 text-xs md:text-sm items-center justify-start">
+              <div>
+                <IoLocation size={20} />
+              </div>
+              <div className=" ">
+                408, G-1 Ahinsha Height, Manavta Nagar, Indore 452016
+              </div>
             </div>
-            <div className="flex flex-col gap-5 pb-6">
-              {section.items.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="text-black opacity-70 text-xs cursor-pointer md:text-sm"
-                >
-                  {item}
+            <div className="text-background/80 opacity-70 flex gap-3 text-xs  items-center justify-start">
+              <IoMdCall size={20} />
+              <span className=" ">+91 7312845936</span>
+            </div>
+            <div className="text-background/80 opacity-70 flex gap-3 text-xs  items-center justify-start">
+              <IoMdMail size={20} />
+              <span className=" ">jses.indore@gmail.com</span>
+            </div>
+            <div className="text-background/80 opacity-60 flex gap-3 text-xs  items-center justify-start">
+              <span className=" ">© 2025 Jan Sahas. All Rights Reserved</span>
+            </div>
+          </div>
+
+          <div className=" md:w-1/2 flex flex-row  justify-between items-between px-3">
+            {Sections.map((section, index) => (
+              <div key={index}>
+                <div className="text-background text-xs opacity-70 pb-5 cursor-pointer md:text-sm">
+                  {section.title}
                 </div>
-              ))}
-            </div>
+                <div className="flex flex-col gap-5 pb-6">
+                  {section.items.map((item, idx) => (
+                    <div
+                      key={idx}
+                      className="text-background/80 opacity-70 text-xs cursor-pointer md:text-sm"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );

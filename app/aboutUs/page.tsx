@@ -10,7 +10,7 @@ import BoardM from "./components/BoardM";
 
 const pages = () => {
   return (
-    <>
+    <div className="py-5">
       <div className="">
         <FirstImage />
       </div>
@@ -27,7 +27,7 @@ const pages = () => {
         <div className="py-4">
           <Approach />
         </div>
-        <div className="py-4">
+        <div className="p-4">
           <Impact />
         </div>
         <div className="">
@@ -37,7 +37,7 @@ const pages = () => {
           <BoardM />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

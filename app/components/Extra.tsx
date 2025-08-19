@@ -16,7 +16,7 @@ const Extra = ({ header, paragraph, image, reverse }: ExtraProps) => {
 
   return (
     <div
-      className={` flex flex-col ${directionClass} justify-center items-center  text-black  gap-3 pb-6 md:gap-5`}
+      className={` flex flex-col ${directionClass} justify-center items-center  text-background/80  gap-3 pb-6 md:gap-5`}
     >
       <div className={`md:w-1/2 lg:w-2/3 ${textAlignClass} `}>
         <div className="text-xl md:text-2xl lg:text-3xl font-semibold ">
@@ -31,7 +31,7 @@ const Extra = ({ header, paragraph, image, reverse }: ExtraProps) => {
           src={image}
           alt="extra image"
           fill
-          className="object-cover object-top rounded-lg"
+          className="object-contain object-top rounded-lg"
           sizes="(max-width: 768px) 300px, (max-width: 1024px) 400px, 500px"
         />
       </div>
