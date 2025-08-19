@@ -19,7 +19,7 @@ const StartingImage = () => {
         "
       >
         {/* 🌒 Slight dark overlay */}
-        <div className="absolute inset-0 bg-black/80 z-0" />
+        <div className="absolute inset-0 bg-background/80 z-0" />
 
         {/* 📝 Content */}
         <div className="relative z-10 px-4 text-white">

@@ -6,13 +6,13 @@ const images = ["/slider/slider1.webp", "/slider/slider2.webp"];
 const OurStory = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-4">
-      <div className="text-black lg:w-1/2">
+      <div className="text-background/80 lg:w-1/2">
         <div className="text-2xl lg:text-4xl font-semibold text-center lg:text-left">
           Our Story
         </div>
-        <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg">
+        <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg text-center">
           Jan Sahas Social Empowerment Society (JSSES) was established in 2006
-          with a deep commitment to empowering the most disadvantaged
+          with a deep commitment to empowering the most disadvantageds
           communities in Madhya Pradesh. Our journey began with the recognition
           of systemic inequalities faced by marginalized populations,
           particularly concerning mental health, caste-based discrimination,

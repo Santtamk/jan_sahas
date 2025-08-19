@@ -30,9 +30,9 @@ const FiveGrids = [
 
 const KeyInterventions = () => {
   return (
-    <div className="py-10 px-3">
+    <div className="px-3 flex flex-col gap-5">
       <div className="py-5">
-        <div className="text-black text-2xl lg:text-4xl font-semibold text-center">
+        <div className="text-background/80 text-2xl lg:text-4xl font-semibold text-center">
           Key Interventions
         </div>
       </div>
@@ -51,10 +51,12 @@ const KeyInterventions = () => {
           return (
             <div
               key={i}
-              className={`border-2 border-[#E9E9E9] rounded-2xl p-6 text-black hover:bg-black hover:text-white ${colSpanClasses} shadow-md`}
+              className={`border-2 border-[#E9E9E9] rounded-2xl p-6 text-background/80 hover:bg-[#2D2A6D] hover:text-white ${colSpanClasses} shadow-md`}
             >
-              <div className="text-xl font-bold">{grid.header}</div>
-              <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg">
+              <div className="text-xl font-bold group-hover:!text-white">
+                {grid.header}
+              </div>
+              <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg group-hover:text-white">
                 {grid.paragraph}
               </p>
             </div>

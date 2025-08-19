@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const WhatWeDo = () => {
   return (
@@ -9,8 +11,10 @@ const WhatWeDo = () => {
         {/* card */}
 
         {/* text section */}
-        <div className="text-black md:pt-10">
-          <p className="text-2xl lg:text-4xl font-semibold">What we do?</p>
+        <div className="text-background/80 md:pt-10">
+          <p className="text-2xl lg:text-4xl text-background/80 font-semibold">
+            What we do?
+          </p>
           <p className="text-xs md:text-sm opacity-60 pt-6 lg:text-lg">
             In our learnings across the years, we’ve developed a comprehensive
             model of mental health, that involves multiple stakeholders
@@ -26,9 +30,11 @@ const WhatWeDo = () => {
           </p>
         </div>
         <div className="flex gap-3  lg:justify-start justify-center">
-          <button className="inline-flex items-center gap-2 cursor-pointer px-8 py-[0.9375rem] rounded-[2rem] bg-[#E4742A] text-white  transition-all duration-300 hover:scale-103  font-medium text-xs md:text-sm">
-            Learn More
-          </button>
+          <Link href="media">
+            <button className="px-8 py-3 rounded-full bg-primary text-white hover:scale-101 transition flex justify-center items-center gap-2 hover:bg-white hover:text-primary cursor-pointer">
+              Learn more <FaArrowRightLong size={15} />
+            </button>
+          </Link>
         </div>
       </div>
       {/* second section */}

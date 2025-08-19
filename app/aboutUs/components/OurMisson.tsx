@@ -13,8 +13,8 @@ const FiveGrids = [
 ];
 const OurMisson = () => {
   return (
-    <div className="text-black flex flex-col gap-5">
-      <div className="text-2xl lg:text-4xl font-semibold text-center lg:text-left py-10">
+    <div className="text-background/80 flex flex-col gap-5">
+      <div className="text-2xl lg:text-4xl font-semibold text-center lg:text-left ">
         Our Mission
       </div>
       <div className="flex gap-3 flex-col md:flex-row ">
@@ -22,7 +22,7 @@ const OurMisson = () => {
           return (
             <div
               key={i}
-              className={`border-2 border-[#E9E9E9] rounded-3xl p-5 text-black hover:bg-black hover:text-white 
+              className={`border-2 border-[#E9E9E9] rounded-3xl p-5 text-background/80 hover:bg-[#2D2A6D] hover:text-white 
                 shadow-md lg:bg-white md:w-1/2`}
             >
               <div className="text-xl font-bold">{grid.header}</div>

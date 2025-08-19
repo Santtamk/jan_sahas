@@ -20,7 +20,9 @@ function NavBar() {
       {/* Fixed Header */}
       <header
         className={` w-full z-50 flex justify-between items-center px-3 py-3  xl:py-1 ${
-          isMenuOpen ? "bg-primary text-white fixed top-0 left-0" : "bg-white"
+          isMenuOpen
+            ? "bg-background text-white fixed top-0 left-0"
+            : "bg-white"
         }`}
       >
         {/* Logo */}
@@ -45,7 +47,7 @@ function NavBar() {
                   href={navLink.link}
                   className="group relative inline-block text-lg font-medium"
                 >
-                  <span className="relative text-black z-10 inline-block hover:bg-primary hover:text-white px-7 py-[0.9375rem] rounded-[2rem]">
+                  <span className="relative text-background/80 z-10 inline-block hover:bg-primary hover:text-white px-7 py-[0.9375rem] rounded-[2rem]">
                     {navLink.title}
                   </span>
                 </Link>
@@ -60,7 +62,7 @@ function NavBar() {
             className={`flex flex-col gap-1 cursor-pointer transition-transform duration-300 p-3 ${
               isMenuOpen
                 ? "rotate-90 text-white bg-black rounded-full"
-                : "text-black"
+                : "text-background/80"
             }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -73,7 +75,7 @@ function NavBar() {
       {isMenuOpen && (
         <div
           className="fixed top-[74px] left-0 w-full h-[calc(100vh-74px)] 
-               bg-primary/95 z-40 px-5 pb-4 lg:hidden overflow-y-auto 
+               bg-background/80 z-40 px-5 pb-4 lg:hidden overflow-y-auto 
                backdrop-blur-md transition-transform duration-300 ease-in-out animate-slideDown"
         >
           <ul className="flex flex-col justify-center items-center gap-5 py-5">

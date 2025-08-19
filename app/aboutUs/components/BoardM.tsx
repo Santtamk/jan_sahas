@@ -47,16 +47,16 @@ const Members = [
 const BoardM = () => {
   return (
     <div>
-      <div className="text-black  text-2xl lg:text-4xl font-semibold text-center pb-5">
+      <div className="text-background/80 text-2xl lg:text-4xl font-semibold text-center pb-5">
         Board Members
       </div>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {/* <div className="flex flex-wrap justify-center items-center max-w-[900px] mx-auto gap-4">
         {Members.map((member, i) => (
           <div
             key={i}
-            className="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition duration-300 max-w-sm mx-auto"
+            className="group bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition duration-300 w-72 "
           >
-            <div className="relative w-full h-56 rounded-t-2xl overflow-hidden">
+            <div className="relative w-full h-56 rounded-t-2xl overflow-hidden z-10">
               <Image
                 fill
                 alt={member.name}
@@ -65,14 +65,48 @@ const BoardM = () => {
               />
             </div>
 
+            <div className=" p-5">
+              <h3 className="text-lg lg:text-xl font-semibold text-gray-900">
+                {member.name}
+              </h3>
+              <p className="text-sm text-gray-500 mt-2">{member.designation}</p>
+              <p className="text-sm text-gray-600  leading-relaxed hidden group-hover:block absolute text-wrap w-72 z-0">
+                {member.about}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div> */}
+
+      <div className="flex flex-wrap justify-center items-center max-w-[900px] mx-auto gap-4">
+        {Members.map((member, i) => (
+          <div
+            key={i}
+            className="group bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition duration-300 w-72"
+          >
+            {/* Image Container */}
+            <div className="relative w-full h-56 rounded-t-2xl overflow-hidden">
+              <Image
+                fill
+                alt={member.name}
+                src={member.img}
+                className="object-cover object-top"
+              />
+
+              {/* Overlay text */}
+              <div className="absolute inset-0 bg-black/60 flex items-center justify-center px-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm text-white leading-relaxed">
+                  {member.about}
+                </p>
+              </div>
+            </div>
+
+            {/* Card Content */}
             <div className="p-5">
               <h3 className="text-lg lg:text-xl font-semibold text-gray-900">
                 {member.name}
               </h3>
               <p className="text-sm text-gray-500 mt-2">{member.designation}</p>
-              <p className="text-sm text-gray-600 mt-4 leading-relaxed">
-                {member.about}
-              </p>
             </div>
           </div>
         ))}
@@ -82,93 +116,3 @@ const BoardM = () => {
 };
 
 export default BoardM;
-
-
-// import React from "react";
-
-// const Members = [
-//   {
-//     name: "Arjun Patel",
-//     img: "/aboutUs/placeholder.png",
-//     designation: "Social Outreach Coordinator",
-//     about:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
-//   },
-//   {
-//     name: "Priya Sharma",
-//     img: "/aboutUs/placeholder.png",
-//     designation: "Social Outreach Coordinator",
-//     about:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
-//   },
-//   {
-//     name: "Ravi Kumar",
-//     img: "/aboutUs/placeholder.png",
-//     designation: "Social Outreach Coordinator",
-//     about:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
-//   },
-//   {
-//     name: "Ravi Kumar",
-//     img: "/aboutUs/placeholder.png",
-//     designation: "Social Outreach Coordinator",
-//     about:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
-//   },
-//   {
-//     name: "Ravi Kumar",
-//     img: "/aboutUs/placeholder.png",
-//     designation: "Social Outreach Coordinator",
-//     about:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
-//   },
-//   {
-//     name: "Ravi Kumar",
-//     img: "/aboutUs/placeholder.png",
-//     designation: "Social Outreach Coordinator",
-//     about:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
-//   },
-//   // Add more members...
-// ];
-
-// const BoardM = () => {
-//   return (
-//     <section className="max-w-7xl mx-auto px-4 py-10">
-//       <h2 className="text-black text-2xl lg:text-4xl font-semibold text-center mb-8">
-//         Board Members
-//       </h2>
-
-//       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-//         {Members.map((member, i) => (
-//           <div
-//             key={i}
-//             className="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full"
-//           >
-//             <div className="relative w-fit h-56 rounded-t-2xl overflow-hidden">
-//               <Image
-//                 width={300}
-//                 height={300}
-//                 alt={member.name}
-//                 src={member.img}
-//                 className="w-[300px] h-[200px] object-cover rounded-t-3xl object-top"
-//               />
-//             </div>
-
-//             <div className="p-5">
-//               <h3 className="text-lg lg:text-xl font-semibold text-gray-900">
-//                 {member.name}
-//               </h3>
-//               <p className="text-sm text-gray-500 mt-2">{member.designation}</p>
-//               <p className="text-sm text-gray-600 mt-4 leading-relaxed">
-//                 {member.about}
-//               </p>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default BoardM;

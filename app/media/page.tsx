@@ -40,10 +40,10 @@ const cards = [
 
 const page = () => {
   return (
-    <div>
+    <div className="lg:pt-2">
       <Top />
       <div className="py-10 max-w-[1440px] mx-auto">
-        <div className="text-2xl lg:text-4xl font-semibold text-black text-center">
+        <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center">
           Annual Reports
         </div>
         <div className="w-full flex justify-center items-center px-4">
@@ -54,7 +54,7 @@ const page = () => {
       </div>
 
       <div className="py-10 bg-gray-300 max-w-[1440px] mx-auto">
-        <div className="text-2xl lg:text-4xl font-semibold text-black text-center">
+        <div className="text-2xl lg:text-4xl font-semibold text-background/80 text-center">
           Events
         </div>
         <div className="w-full flex justify-center items-center">
@@ -63,7 +63,7 @@ const page = () => {
           </div>
         </div>
       </div>
-    
+
       <Gallery />
     </div>
   );

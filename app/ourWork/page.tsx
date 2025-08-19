@@ -19,10 +19,10 @@ const page = () => {
         {/* <SuccessStory /> */}
         <Over />
       </div>
-      <div className="max-w-[1440px] mx-auto">
+      <div className="">
         <OurProgram />
       </div>
-      <div className=" px-4 sm:px-6 lg:px-10 max-w-[1440px] mx-auto">
+      <div className=" px-4 sm:px-6 lg:px-10 pb-5 max-w-[1440px] mx-auto">
         <Collab />
         <Extra
           header={"Direct Referrals"}

@@ -37,10 +37,10 @@ const Enhance = () => {
     "
     >
       <div className="py-7 flex flex-col items-center justify-center">
-        <div className="text-black  text-2xl lg:text-4xl font-semibold text-center ">
-          Enhancing Access to Information 
+        <div className="text-background/80  text-2xl lg:text-4xl font-semibold text-center ">
+          Enhancing Access to Information
         </div>
-        <p className="text-xs md:text-sm  pt-6 lg:text-lg text-black text-center opacity-60 ">
+        <p className="text-xs md:text-sm  pt-6 lg:text-lg text-background/80 text-center opacity-60 ">
           Bridging the information gap in remote villages is crucial for
           empowerment. We have dedicated efforts to developing and disseminating
           essential educational materials, ensuring vital information on mental
@@ -54,7 +54,7 @@ const Enhance = () => {
           return (
             <div
               key={i}
-              className={`border-2 border-[#E9E9E9] rounded-3xl p-5 text-black hover:bg-black hover:text-white 
+              className={`border-2 border-[#E9E9E9] rounded-3xl p-5 text-background/80 hover:bg-textPrimary hover:text-white 
                 shadow-md lg:bg-white`}
             >
               <div className="text-xl font-bold">{grid.header}</div>

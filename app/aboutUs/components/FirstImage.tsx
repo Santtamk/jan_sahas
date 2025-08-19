@@ -13,7 +13,7 @@ const FirstImage = () => {
       text-center
       h-[300px] sm:h-[400px] md:h-[500px] "
     >
-      <div className="absolute inset-0 bg-black/80 z-0" />
+      <div className="absolute inset-0 bg-background/80 z-0" />
       <div className=" relative text-3xl sm:text-4xl md:text-6xl font-extrabold text-white">
         About Us
       </div>

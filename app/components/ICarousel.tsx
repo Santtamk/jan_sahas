@@ -70,7 +70,7 @@ export default function ImageSlider({ images }: ImageSliderProps) {
           <div
             key={index}
             className={`h-2 w-2 rounded-full ${
-              index === currentIndex ? "bg-[#E4742A]" : "bg-gray-300"
+              index === currentIndex ? "bg-primary" : "bg-gray-300"
             }`}
           />
         ))}

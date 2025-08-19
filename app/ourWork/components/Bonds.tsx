@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { FaImages } from "react-icons/fa6";
 
 const Bonds = () => {
   return (
@@ -9,7 +11,7 @@ const Bonds = () => {
         {/* card */}
 
         {/* text section */}
-        <div className="text-black md:pt-10">
+        <div className="text-background/80 md:pt-10">
           <p className="text-2xl lg:text-4xl font-semibold">
             Strengthening Community Bonds
           </p>
@@ -31,9 +33,11 @@ const Bonds = () => {
           </p>
         </div>
         <div className="flex gap-3  lg:justify-start justify-center">
-          <button className="inline-flex items-center gap-2 cursor-pointer px-8 py-[0.9375rem] rounded-[2rem] bg-[#E4742A] text-white  transition-all duration-300 hover:scale-103  font-medium text-xs md:text-sm">
-            Photo Gallery
-          </button>
+          <Link href="/media#photoGallery">
+            <button className="inline-flex items-center gap-2 cursor-pointer px-8 py-[0.9375rem] rounded-[2rem] bg-primary text-white  transition-all duration-300 hover:scale-103  font-medium text-xs md:text-sm">
+              Photo gallery <FaImages />
+            </button>
+          </Link>
         </div>
       </div>
       {/* second section */}
